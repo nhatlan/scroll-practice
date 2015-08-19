@@ -21,29 +21,16 @@
 </head>
 <body>
 	<div class="container">
-		<script>
-
-	// Init Controller
-		var scrollMagicController = new ScrollMagic.Controller(); 
-		</script>
 		<section class="spacer">
+			
 		</section>
 		<section id="opening">
 			<article>
-				<span id="blur">
+				<span class="blur">
 					From this distance vantage point, the earth, might not seem of any particular interest. </br> But for us, it's different.
 				</span>
 			</article>
 		</section>
-		<script>
-				// build scene
-				var scene = new ScrollMagic.Scene({
-									triggerElement: "#opening"
-								})
-								.setTween("#blur", 0.5, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
-								.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-								.addTo(controller);
-		</script>
 		<section id="statement">
 			<article>
 				Look again at that dot. That's here. That's home. That's us.
