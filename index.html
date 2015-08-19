@@ -13,20 +13,37 @@
 	<!-- Style -->
 	<link rel="stylesheet" href="/css/style.css" type="text/css">
 	<!-- Javascript -->
-	<script type="text/javascript" src="/js/script.js"></script>
 	<script type="text/javascript" src="/js/jquery.min.js"></script> 
 	<script type="text/javascript" src="/js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="/js/ScrollMagic.js"></script>
-	<script type="text/javascript" src="/js/animation.gsap.js"></script>
 	<script type="text/javascript" src="/js/debug.addIndicators.js"></script>
+	<script type="text/javascript" src="/js/script.js"></script>
 </head>
 <body>
 	<div class="container">
+		<script>
+
+	// Init Controller
+		var scrollMagicController = new ScrollMagic.Controller(); 
+		</script>
+		<section class="spacer">
+		</section>
 		<section id="opening">
-			<article id="blur">
-				From this distance vantage point, the earth, might not seem of any particular interest. </br> But for us, it's different.
+			<article>
+				<span id="blur">
+					From this distance vantage point, the earth, might not seem of any particular interest. </br> But for us, it's different.
+				</span>
 			</article>
 		</section>
+		<script>
+				// build scene
+				var scene = new ScrollMagic.Scene({
+									triggerElement: "#opening"
+								})
+								.setTween("#blur", 0.5, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
+								.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+								.addTo(controller);
+		</script>
 		<section id="statement">
 			<article>
 				Look again at that dot. That's here. That's home. That's us.
