@@ -1,8 +1,5 @@
-html, body, .container, section{
-	height: 100%; 
-}
 .spacer{
-	min-height: 400px; 
+	height: 1000px; 
 }
 section{
 	position: relative;
@@ -15,14 +12,7 @@ article{
 #opening article, #statement article{
 	width: 60%; 
 	text-align: center;
-	font-size: 2.5em;
-	position: absolute;
-	margin: auto; 
-	top: 0px; 
-	right:0px; 
-	bottom: 0px;
-	left: 0px; 
-	height:5em; 
+	font-size: 2.5em; 
 }
 
 #statement article{

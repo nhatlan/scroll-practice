@@ -17,25 +17,43 @@
 	<script type="text/javascript" src="/js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="/js/ScrollMagic.js"></script>
 	<script type="text/javascript" src="/js/debug.addIndicators.js"></script>
-	<script type="text/javascript" src="/js/script.js"></script>
+	<!-- <script type="text/javascript" src="/js/script.js"></script> -->
 </head>
 <body>
 	<div class="container">
-		<section class="spacer">
-			
-		</section>
+		<script type="text/javascript">
+			var scrollMagicController = new ScrollMagic.Controller(); 
+		</script>
+		<div class="spacer"> </div>
 		<section id="opening">
 			<article>
-				<span class="blur">
+				<span id="blur">
 					From this distance vantage point, the earth, might not seem of any particular interest. </br> But for us, it's different.
 				</span>
 			</article>
 		</section>
+		<script type="text/javascript">
+					var scene = new ScrollMagic.Scene({
+		    triggerElement: '#opening',
+		    duration: 0
+		  })
+			.setTween("#blur", {
+		    backgroundColor: 'rgb(255, 39, 46)',
+		    scale: 1,
+		    rotation: 20
+			})
+			.addTo(scrollMagicController)
+
+			  // Add debug indicators fixed on right side
+		   	scene.addIndicators();
+		</script>
+		<div class="spacer"> </div>
 		<section id="statement">
 			<article>
 				Look again at that dot. That's here. That's home. That's us.
 			</article>
 		</section>
+		<div class="spacer"> </div>
 	</div>
 </body>
 </html>
