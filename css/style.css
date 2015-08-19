@@ -1,20 +1,3 @@
-.spacer{
-	height: 1000px; 
-}
-section{
-	position: relative;
-}
-
-article{
-	font-family: 'Roboto', sans-serif;
-}
-
-#opening article, #statement article{
-	width: 60%; 
-	text-align: center;
-	font-size: 2.5em; 
-}
-
-#statement article{
-	font-family: 'Roboto Slab', serif;;
+html, body, .container, section{
+	height:100%; 
 }
