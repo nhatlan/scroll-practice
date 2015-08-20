@@ -1,3 +1,9 @@
-html, body, .container, section{
+/*html, body, .container, section{
 	height:100%; 
+}*/
+.spacer{
+	min-height: 500px;
+}
+.container{
+	text-align: center;
 }
