@@ -7,23 +7,30 @@ $(function(){
 						'-webkit-filter':'blur(3px)'
 					});
 	//Build Title Scene 
-	var titleScene = new ScrollMagic.Scene({
-		triggerElements: "#title",
+	var scene = new ScrollMagic.Scene({
+		triggerElement: "#title-trigger", 
+		duration: 200
 	})
-	.setPin("#pin1")
+	.setClassToggle("div#background", "title")
 	.setTween(tweenTitle)
 	.addIndicators({name :"1 {duration:0}"})
 	.addTo(controller); 
 
-	//Test Scene 1 Animation
-	var tweenScene1 = TweenMax.to(".scene1-text", 0.2, {scale: 2});
-
 	//Build Scene1 
-	var scene1 = new ScrollMagic.Scence({
-		triggerElements: "#scene1",
+	var scene = new ScrollMagic.Scene({
+		triggerElement: "#scene1-trigger",
 		duration: 500
 	})
-	.setTween(tweenScene1)
+	.setClassToggle("div#background", "scene1")
 	.addIndicators({name :"2 {duration:500}"})
+	.addTo(controller); 
+
+	//Build Scene 2
+	var scene = new ScrollMagic.Scene({
+		triggerElement: "#scene2-trigger",
+		duration: 500
+	})
+	.setClassToggle("div#background", "scene2")
+	.addIndicators({name :"3 {duration:500}"})
 	.addTo(controller); 
 });

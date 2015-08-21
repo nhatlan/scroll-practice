@@ -8,7 +8,7 @@ body{
 	margin: 0px; 
 }
 .spacer{
-	min-height: 500px;
+	min-height: 100px;
 }
 .container{
 	text-align: center;
@@ -21,7 +21,6 @@ body{
 	left: 0; 
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url("/img/open.jpg");
 }
 article{
 	font-family: 'Roboto', sans-serif;
@@ -29,8 +28,11 @@ article{
 	color: rgba(255, 255, 255, 1); 
 	line-height: 1.61;
 }
-#title{
-	text-align: center; 
+#title-trigger{
+	min-height: 100px; 
+}
+.title{
+	background-image: url("/img/open.jpg");
 }
 .title-text{
 	text-align: center;
@@ -44,9 +46,15 @@ article{
 	font-family: 'Roboto Slab', serif;
 	font-size: 2em;
 }
+#scene1-trigger{
+	min-height: 100px; 
+}
 .scene1{
 	background-image: url("/img/1.jpg");
 }
 .scene1-text{
 	color: rgba(255, 255, 255, 1);
+}
+.scene2{
+	background-image: url("/img/2.jpg");
 }
