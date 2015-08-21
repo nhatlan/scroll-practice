@@ -9,9 +9,9 @@ $(function(){
 
 	//Build Title Scene 
 	var scene = new ScrollMagic.Scene({
-		triggerElement: "#scene1-trigger", 
-		triggerHook: 1, 
-		duration: 500
+		triggerElement: "#title-trigger", 
+		triggerHook: 1,
+		duration: 200
 	})
 	.setClassToggle("div#background", "title")
 	.setTween(tweenTitle)
