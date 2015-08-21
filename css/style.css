@@ -48,16 +48,19 @@ article{
 }
 .title{
 	background-image: url("/img/open.jpg");
+	transition: background-image 0.2s ease-in-out;
 }
 #scene1-trigger{
 	min-height: 100px; 
 }
 .scene1{
 	background-image: url("/img/1.jpg");
+	transition: background-image 0.2s ease-in-out;
 }
 .scene1-text{
 	color: rgba(255, 255, 255, 1);
 }
 .scene2{
 	background-image: url("/img/2.jpg");
+	transition: background-image 0.2s ease-in-out;
 }
