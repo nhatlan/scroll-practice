@@ -1,9 +1,46 @@
-/*html, body, .container, section{
+html{
+	background-color: rgba(0, 0, 0, 1)
+}
+html, body, .container, section{
 	height:100%; 
-}*/
+}
+body{
+	margin: 0px; 
+}
 .spacer{
 	min-height: 500px;
 }
 .container{
 	text-align: center;
+}
+#background{
+	position: fixed; 
+	top: 0;
+	right: 0; 
+	bottom: 0; 
+	left: 0; 
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("/img/open.jpg");
+}
+article{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+	color: rgba(255, 255, 255, 1); 
+	line-height: 1.61;
+}
+.title-text{
+	text-align: center;
+	position: absolute; 
+	margin: auto; 
+	top: 0;
+	right: 0; 
+	bottom: 0; 
+	left: 0; 
+	height: 4em; 
+	font-family: 'Roboto Slab', serif;
+	font-size: 2em;
+}
+.scene1{
+	background-image: url("/img/1.jpg");
 }

@@ -4,6 +4,7 @@
 	<meta charset="utf-8"> 
 	<title> Practice simple tweening</title>
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/css/examples.css" type="text/css">
 	<link rel="stylesheet" href="/css/style.css" type="text/css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -14,25 +15,19 @@
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-		 <script>
-			// init controller
-			var controller = new ScrollMagic.Controller();
-		</script>
+	<div class="container">
+		<div id="background"> </div>
+		<section id="title">
+			<article id="pin1" class="title-text">
+				Pale Blue Dot 
+			</article>
+		</section>
+		<section id="scene1">
+			<article class="scene1-text">
+				From this distance vantage point, the earth, might not seem of any particular interest.
+			</article>
+		</section>
 		<div class="spacer"></div>
-		<div class="container">
-			<div id="opening">
-				<article>
-						From this distance vantage point, the earth, might not seem of any particular interest. </br> But for us, it's different.
-				</article>
-			</div>
-			<script>
-					// build scene
-					var scene = new ScrollMagic.Scene({triggerElement:"#opening", duration: 0})
-                               .setTween("#opening", 0.3, {scale: 2.5})
-                               .addIndicators({name: "1 (duration: 0)"}) 
-                               .addTo(controller);
-			</script>
-		</div>
-	<div class="spacer"></div>
+	</div>
 </body>
 </html>
