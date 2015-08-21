@@ -10,8 +10,7 @@ $(function(){
 	//Build Title Scene 
 	var scene = new ScrollMagic.Scene({
 		triggerElement: "#scene1-trigger", 
-		triggerHook: 1, 
-		duration: 500
+		triggerHook: 1
 	})
 	.setClassToggle("div#background", "title")
 	.setTween(tweenTitle)
@@ -20,8 +19,7 @@ $(function(){
 
 	//Build Scene1 
 	var scene = new ScrollMagic.Scene({
-		triggerElement: "#scene1-trigger",
-		duration: 500
+		triggerElement: "#scene1-trigger"
 	})
 	.setClassToggle("div#background", "scene1")
 	.addIndicators({name :"2 {duration:500}"})
@@ -29,8 +27,7 @@ $(function(){
 
 	//Build Scene 2
 	var scene = new ScrollMagic.Scene({
-		triggerElement: "#scene2-trigger",
-		duration: 500
+		triggerElement: "#scene2-trigger"
 	})
 	.setClassToggle("div#background", "scene2")
 	.addIndicators({name :"3 {duration:500}"})

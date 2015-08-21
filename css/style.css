@@ -1,5 +1,5 @@
 html{
-	background-color: rgba(0, 0, 0, 1)
+	background-color: rgba(0, 0, 0, 1); 
 }
 html, body, .container, section{
 	height:100%; 
@@ -22,19 +22,16 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+section{
+	position: relative; 
+}
 article{
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.5em;
 	color: rgba(255, 255, 255, 1); 
 	line-height: 1.61;
 }
-#title-trigger{
-	min-height: 100px; 
-}
-.title{
-	background-image: url("/img/open.jpg");
-}
-.title-text{
+.text{
 	text-align: center;
 	position: absolute; 
 	margin: auto; 
@@ -45,6 +42,12 @@ article{
 	height: 4em; 
 	font-family: 'Roboto Slab', serif;
 	font-size: 2em;
+}
+#title-trigger{
+	min-height: 100px; 
+}
+.title{
+	background-image: url("/img/open.jpg");
 }
 #scene1-trigger{
 	min-height: 100px; 
