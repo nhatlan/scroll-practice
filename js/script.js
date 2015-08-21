@@ -2,14 +2,16 @@ $(function(){
 	// Init Scroll Magic 
 	var controller = new ScrollMagic.Controller(); 
 	// Opening Animation 
-	var tweenTitle = TweenMax.to(".title-text", 0.2, 
+	var tweenTitle = TweenMax.to(".title-text", 1, 
 					{
 						'-webkit-filter':'blur(3px)'
 					});
+
 	//Build Title Scene 
 	var scene = new ScrollMagic.Scene({
-		triggerElement: "#title-trigger", 
-		duration: 200
+		triggerElement: "#scene1-trigger", 
+		triggerHook: 1, 
+		duration: 500
 	})
 	.setClassToggle("div#background", "title")
 	.setTween(tweenTitle)
