@@ -7,17 +7,24 @@ $(function(){
 						'-webkit-filter':'blur(3px)'
 					});
 
-	//Build Title Scene 
+	//Build Title Scene for background
 	var scene = new ScrollMagic.Scene({
 		triggerElement: "#title-trigger", 
 		triggerHook: 1,
-		duration: 200
 	})
 	.setClassToggle("div#background", "title")
-	.setTween(tweenTitle)
 	.addIndicators({name :"1 {duration:0}"})
 	.addTo(controller); 
-
+	//Build Title Scene for title 
+	var scene = new ScrollMagic.Scene({
+		triggerElement: "#title-trigger", 
+		triggerHook: 1,
+		duration: 500
+	})
+	.setTween(tweenTitle)
+	.setPin("#pin1")
+	.addIndicators({name :"1.5 {duration:0}"})
+	.addTo(controller); 
 	//Build Scene1 
 	var scene = new ScrollMagic.Scene({
 		triggerElement: "#scene1-trigger"

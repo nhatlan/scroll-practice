@@ -24,6 +24,7 @@ body{
 }
 section{
 	position: relative; 
+	text-align: center; 
 }
 article{
 	font-family: 'Roboto', sans-serif;
@@ -45,6 +46,9 @@ article{
 }
 #title-trigger{
 	min-height: 100px; 
+}
+.title-text{
+	text-align: center; 
 }
 .title{
 	background-image: url("/img/open.jpg");
